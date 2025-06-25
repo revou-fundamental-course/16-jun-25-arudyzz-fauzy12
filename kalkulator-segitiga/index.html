@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kalkulator Segitiga</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container glass">
+    <h1><span class="highlight">Kalkulator</span> Segitiga</h1>
+
+    <form id="triangleForm">
+      <div class="form-group">
+        <label for="alas">Alas (cm):</label>
+        <input type="number" id="alas" required />
+      </div>
+      <div class="form-group">
+        <label for="tinggi">Tinggi (cm):</label>
+        <input type="number" id="tinggi" required />
+      </div>
+      <div class="form-group">
+        <label for="sisi1">Sisi A (cm):</label>
+        <input type="number" id="sisi1" required />
+      </div>
+      <div class="form-group">
+        <label for="sisi2">Sisi B (cm):</label>
+        <input type="number" id="sisi2" required />
+      </div>
+      <div class="form-group">
+        <label for="sisi3">Sisi C (cm):</label>
+        <input type="number" id="sisi3" required />
+      </div>
+      <button type="submit">Hitung</button>
+    </form>
+
+    <div id="result" class="result hidden">
+      <p><strong>Luas:</strong> <span id="luasResult"></span> cm²</p>
+      <p><strong>Keliling:</strong> <span id="kelilingResult"></span> cm</p>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
